@@ -79,8 +79,9 @@ namespace Munkaido_nyilvantarto
             {
                 MessageBox.Show("Hibás felhasználónév", "HIBA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
 
+            textBoxJelszo.Text = "";
+            textBoxFelhasznalonev.Text = "";
         }
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)

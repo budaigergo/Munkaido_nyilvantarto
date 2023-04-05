@@ -56,8 +56,7 @@ namespace Munkaido_nyilvantarto
 
         private void buttonKijelentkezes_Click(object sender, EventArgs e)
         {
-            Program.Login.textBoxJelszo.Text = "";
-            Program.Login.textBoxFelhasznalonev.Text = "";
+
             this.Hide();
             Program.Login.Show();
         }
