@@ -35,7 +35,7 @@ namespace Munkaido_nyilvantarto
             Environment.Exit(0);
 
         }
-
+        //szia
         private void buttonBelepes_Click(object sender, EventArgs e)
         {
             Database database=new Database();        
