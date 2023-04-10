@@ -19,7 +19,7 @@ namespace Munkaido_nyilvantarto
             textBoxNev.Text = string.Empty;
             textBoxPozicio.Text = string.Empty;
             textBoxTelefonszam.Text = string.Empty;
-            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker1.Value = DateTime.Now;   
             comboBoxNem.Text = string.Empty;
         }
 
@@ -78,7 +78,7 @@ namespace Munkaido_nyilvantarto
             Database database = new Database();
             database.comm.CommandText = "UPDATE `alkalmazottak_adatai` SET `aktiv`= 'false' WHERE `Id`=@id";
             database.comm.Parameters.AddWithValue("@id", textBoxId.Text);
-            database.conn.Open();
+            database.conn.Open();   
 
             if (listBoxEmberek.SelectedIndex > 0)
             {
@@ -124,7 +124,7 @@ namespace Munkaido_nyilvantarto
             database.comm.Parameters.AddWithValue("@nev", textBoxNev.Text);
             database.comm.Parameters.AddWithValue("@id", textBoxId.Text);
             database.comm.Parameters.AddWithValue("@nem", comboBoxNem.Text);
-            database.comm.Parameters.AddWithValue("@cim", textBoxCim.Text);
+            database.comm.Parameters.AddWithValue("@cim ", textBoxCim.Text);
             database.comm.Parameters.AddWithValue("@pozicio", textBoxPozicio.Text);
             database.comm.Parameters.AddWithValue("@szuletes", dateTimePicker1.Value);
             database.comm.Parameters.AddWithValue("@telefonszam", textBoxTelefonszam.Text);
@@ -140,7 +140,7 @@ namespace Munkaido_nyilvantarto
             }
             else
             {
-                MessageBox.Show("Az adatok módosítása sikertelen!");
+                MessageBox.Show("Nem jelölt ki alkalmazottat!");
             }
             if (database.conn.State == ConnectionState.Open)
             {
@@ -157,7 +157,7 @@ namespace Munkaido_nyilvantarto
             database.conn.Open();
             database.comm.CommandText = "INSERT INTO `alkalmazottak_adatai` (`Id`, `Nev`, `Cim`, `Nem`, `Pozicio`, `Szuletesidatum`, `Telefonszam`, `Napifizetese`) VALUES " +
                 "(Null, @nev, @cim, @nem, @pozicio, @szuletes, @telefonszam, @napifizetes);";
-            database.comm.Parameters.AddWithValue("@nev", textBoxNev.Text);
+            database.comm.Parameters.AddWithValue("@nev", textBoxNev.Text); 
             database.comm.Parameters.AddWithValue("@nem", comboBoxNem.Text);
             database.comm.Parameters.AddWithValue("@cim", textBoxCim.Text);
             database.comm.Parameters.AddWithValue("@pozicio", textBoxPozicio.Text);

@@ -14,7 +14,7 @@ namespace Munkaido_nyilvantarto
 {
     public partial class FormLogin : Form
     {
-        
+
         public FormLogin()
         {
             InitializeComponent();
@@ -35,10 +35,10 @@ namespace Munkaido_nyilvantarto
             Environment.Exit(0);
 
         }
-        
+
         private void buttonBelepes_Click(object sender, EventArgs e)
         {
-            Database database=new Database();        
+            Database database = new Database();
             string username = "";
             string password = "";
 
@@ -46,10 +46,11 @@ namespace Munkaido_nyilvantarto
 
             database.conn.Open();
             MySqlDataReader dr = database.comm.ExecuteReader();
-            while (dr.Read()) {
+            while (dr.Read())
+            {
                 username = dr["username"].ToString();
                 password = dr["password"].ToString();
-            } 
+            }
 
             dr.Close();
             database.conn.Close();
@@ -58,14 +59,14 @@ namespace Munkaido_nyilvantarto
             {
                 MessageBox.Show("Nem adott meg felhasználónevet!", "HIBA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (textBoxFelhasznalonev.Text == username) 
+            else if (textBoxFelhasznalonev.Text == username)
             {
-                if (textBoxJelszo.Text=="")
+                if (textBoxJelszo.Text == "")
                 {
                     MessageBox.Show("Nem adott meg jelszavat!", "HIBA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
-                else if (textBoxJelszo.Text==password)
+                else if (textBoxJelszo.Text == password)
                 {
                     Program.Fooldal.Show();
                     this.Hide();

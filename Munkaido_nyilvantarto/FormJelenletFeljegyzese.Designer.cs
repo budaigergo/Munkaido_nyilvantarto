@@ -82,7 +82,7 @@
             this.buttonMegjelent.Location = new System.Drawing.Point(612, 218);
             this.buttonMegjelent.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMegjelent.Name = "buttonMegjelent";
-            this.buttonMegjelent.Size = new System.Drawing.Size(250, 65);
+            this.buttonMegjelent.Size = new System.Drawing.Size(250, 75);
             this.buttonMegjelent.TabIndex = 2;
             this.buttonMegjelent.Text = "Megjelent";
             this.buttonMegjelent.UseVisualStyleBackColor = false;
@@ -99,7 +99,7 @@
             this.buttonFizetetthianyzas.Location = new System.Drawing.Point(612, 444);
             this.buttonFizetetthianyzas.Margin = new System.Windows.Forms.Padding(0);
             this.buttonFizetetthianyzas.Name = "buttonFizetetthianyzas";
-            this.buttonFizetetthianyzas.Size = new System.Drawing.Size(250, 65);
+            this.buttonFizetetthianyzas.Size = new System.Drawing.Size(250, 75);
             this.buttonFizetetthianyzas.TabIndex = 3;
             this.buttonFizetetthianyzas.Text = "Nem fizetett,igazolt távollét";
             this.buttonFizetetthianyzas.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             this.buttonTappenz.Location = new System.Drawing.Point(612, 331);
             this.buttonTappenz.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTappenz.Name = "buttonTappenz";
-            this.buttonTappenz.Size = new System.Drawing.Size(250, 65);
+            this.buttonTappenz.Size = new System.Drawing.Size(250, 75);
             this.buttonTappenz.TabIndex = 4;
             this.buttonTappenz.Text = "Táppénz";
             this.buttonTappenz.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@
             this.buttonIgazolatlan.Location = new System.Drawing.Point(612, 557);
             this.buttonIgazolatlan.Margin = new System.Windows.Forms.Padding(0);
             this.buttonIgazolatlan.Name = "buttonIgazolatlan";
-            this.buttonIgazolatlan.Size = new System.Drawing.Size(250, 65);
+            this.buttonIgazolatlan.Size = new System.Drawing.Size(250, 75);
             this.buttonIgazolatlan.TabIndex = 21;
             this.buttonIgazolatlan.Text = "Igazolatlan távollét";
             this.buttonIgazolatlan.UseVisualStyleBackColor = false;

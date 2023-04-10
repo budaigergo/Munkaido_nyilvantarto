@@ -135,7 +135,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(372, 135);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Üdvözöljuk a Munkaidő\r\n Nyilvántartó\r\n Rendszerben";
+            this.label4.Text = "Üdvözöljük a Munkaidő\r\n Nyilvántartó\r\n Rendszerben";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox1
@@ -181,6 +181,7 @@
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.buttonBelepes;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
