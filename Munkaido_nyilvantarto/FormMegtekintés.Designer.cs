@@ -45,11 +45,11 @@
             this.textBoxNem = new System.Windows.Forms.TextBox();
             this.textBoxNev = new System.Windows.Forms.TextBox();
             this.listBoxEmberek = new System.Windows.Forms.ListBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.buttonKilepes = new System.Windows.Forms.Button();
+            this.textBoxDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -253,15 +253,6 @@
             this.listBoxEmberek.TabIndex = 42;
             this.listBoxEmberek.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(698, 453);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 40);
-            this.dateTimePicker1.TabIndex = 43;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -316,6 +307,19 @@
             this.buttonKilepes.UseVisualStyleBackColor = false;
             this.buttonKilepes.Click += new System.EventHandler(this.buttonKilepes_Click);
             // 
+            // textBoxDate
+            // 
+            this.textBoxDate.BackColor = System.Drawing.Color.DarkCyan;
+            this.textBoxDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDate.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxDate.ForeColor = System.Drawing.Color.White;
+            this.textBoxDate.Location = new System.Drawing.Point(698, 457);
+            this.textBoxDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxDate.Name = "textBoxDate";
+            this.textBoxDate.ReadOnly = true;
+            this.textBoxDate.Size = new System.Drawing.Size(230, 40);
+            this.textBoxDate.TabIndex = 56;
+            // 
             // FormMegtekintés
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -323,9 +327,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(979, 606);
+            this.Controls.Add(this.textBoxDate);
             this.Controls.Add(this.buttonKilepes);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.listBoxEmberek);
             this.Controls.Add(this.textBoxNev);
             this.Controls.Add(this.textBoxNem);
@@ -374,10 +378,10 @@
         private System.Windows.Forms.TextBox textBoxNem;
         private System.Windows.Forms.TextBox textBoxNev;
         private System.Windows.Forms.ListBox listBoxEmberek;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonKilepes;
+        private System.Windows.Forms.TextBox textBoxDate;
     }
 }

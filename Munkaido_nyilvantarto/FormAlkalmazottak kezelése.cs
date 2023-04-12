@@ -124,7 +124,7 @@ namespace Munkaido_nyilvantarto
             database.comm.Parameters.AddWithValue("@nev", textBoxNev.Text);
             database.comm.Parameters.AddWithValue("@id", textBoxId.Text);
             database.comm.Parameters.AddWithValue("@nem", comboBoxNem.Text);
-            database.comm.Parameters.AddWithValue("@cim ", textBoxCim.Text);
+            database.comm.Parameters.AddWithValue("@cim", textBoxCim.Text);
             database.comm.Parameters.AddWithValue("@pozicio", textBoxPozicio.Text);
             database.comm.Parameters.AddWithValue("@szuletes", dateTimePicker1.Value);
             database.comm.Parameters.AddWithValue("@telefonszam", textBoxTelefonszam.Text);

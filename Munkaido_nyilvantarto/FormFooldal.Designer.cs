@@ -275,7 +275,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormFooldal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Munkaidő nyilvántartó rendszer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Fooldal_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMegtekintes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFeljegyzes)).EndInit();

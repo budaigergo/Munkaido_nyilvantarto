@@ -29,7 +29,7 @@ namespace Munkaido_nyilvantarto
             JelenletFeljegyzese = new FormJelenletFeljegyzese();
             JelenletOsszegzo = new FormJelenlétÖsszegző();
             Fizetes = new FormFizetes();
-            Application.Run(Fooldal);
+            Application.Run(Login);
         }
     }
 }

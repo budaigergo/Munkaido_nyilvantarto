@@ -188,7 +188,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormFizetes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "asdfasdf";
+            this.Text = "Fizetés kezelése";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormFizetes_FormClosing_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

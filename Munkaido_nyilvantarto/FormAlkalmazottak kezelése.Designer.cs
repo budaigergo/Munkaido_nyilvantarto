@@ -392,7 +392,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Alkalmazottak_kezelese";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alkalmazottak_kezelese";
+            this.Text = "Alkalmazottak kezelése";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Alkalmazottak_szerkesztese_FormClosing);
             this.Load += new System.EventHandler(this.Alkalmazottak_kezelese_Load);
             this.panel1.ResumeLayout(false);

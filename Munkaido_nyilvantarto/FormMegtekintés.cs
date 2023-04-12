@@ -28,8 +28,9 @@ namespace Munkaido_nyilvantarto
             textBoxNev.Text= string.Empty;
             textBoxpozicio.Text= string.Empty;
             textBoxTelszam.Text = string.Empty;
-            dateTimePicker1.Value = DateTime.Now;
-        }
+            textBoxDate.Text= string.Empty;
+
+         }
 
         private void Megtekintés_Load(object sender, EventArgs e)
         {
@@ -64,7 +65,7 @@ namespace Munkaido_nyilvantarto
             textBoxTelszam.Text = kivalasztottalkalmazott.Telefonszam.ToString();
             textBoxFizetes.Text = kivalasztottalkalmazott.Napifizetese.ToString();
             textBoxId.Text = kivalasztottalkalmazott.Id.ToString();
-            dateTimePicker1.Text = kivalasztottalkalmazott.Szuletesidatum.ToString();
+            textBoxDate.Text = kivalasztottalkalmazott.Szuletesidatum.ToString("d");
 
         }
 
