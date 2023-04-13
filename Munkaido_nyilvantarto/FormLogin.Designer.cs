@@ -74,7 +74,6 @@
             // 
             this.buttonBelepes.BackColor = System.Drawing.Color.DarkCyan;
             this.buttonBelepes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBelepes.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.buttonBelepes.FlatAppearance.BorderSize = 100;
             this.buttonBelepes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonBelepes.ForeColor = System.Drawing.Color.White;

@@ -35,7 +35,7 @@ namespace Munkaido_nyilvantarto
 
         private void Fooldal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
+            Program.Login.Show();
         }
 
         private void pictureBoxMegtekintes_Click(object sender, EventArgs e)
