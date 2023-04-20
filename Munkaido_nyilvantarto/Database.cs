@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Munkaido_nyilvantarto
@@ -21,6 +23,17 @@ namespace Munkaido_nyilvantarto
             builder.Database = "munkaidonyilvantarto";
              conn = new MySqlConnection(builder.ConnectionString);
              comm = conn.CreateCommand();
+            try
+            {
+                conn.Open();
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+
+                MessageBox.Show("Nem sikerült csatlakozni az adatbázis szerverhez!");
+                Environment.Exit(0);
+            }
         }
     }
 }
